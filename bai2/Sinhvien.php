@@ -20,6 +20,5 @@ class Sinhvien {
         }
     }
 }  
-
 $sinhvien1 = new Sinhvien("ph24374","duong",42);
 $sinhvien1->checkPoint();
