@@ -20,7 +20,6 @@ class People
 }
 
 // create class Employee extends People have attributes id , workingDays , totalLeaveTaken , dalyWage
-
 class Employee extends People
 {
     public $id;

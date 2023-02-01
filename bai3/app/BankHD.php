@@ -1,7 +1,9 @@
 <?php
+
 namespace App;
 
-class BankHD extends Bankmodel {
+class BankHD extends Bankmodel
+{
     public const PI = 3.14;
     public static $name = 'BankHD';
     public function tranfer($money)
