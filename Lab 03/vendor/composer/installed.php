@@ -3,7 +3,7 @@
         'name' => 'user/bai4',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'be927f9a79b8661313d39fbd916707fc3d9af362',
+        'reference' => '23c4f41c5b11a1e21e10edf370a64456ee6b8589',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'user/bai4' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'be927f9a79b8661313d39fbd916707fc3d9af362',
+            'reference' => '23c4f41c5b11a1e21e10edf370a64456ee6b8589',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
