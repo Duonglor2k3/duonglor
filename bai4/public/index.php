@@ -9,7 +9,7 @@ $router = new Router;
 Router::get('/', function(){
   echo "HOME PAGE";
 });
-Router::get('/contact', [HomeController::class ,('contact')]);
+Router::get('/contact', [HomeController::class ,'contact']);
 
 Router::get('/home',[HomeController::class , 'index']);
 $router->resolve();
