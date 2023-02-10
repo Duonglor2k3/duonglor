@@ -5,7 +5,6 @@ use App\Controllers\HomeController;
 use App\Models\CategoryModel;
 use App\Router;
 
-$cate = new CategoryModel;
 
 
 $router = new Router;
@@ -15,6 +14,5 @@ Router::get('/', function(){
 Router::get('/contact', [HomeController::class ,'contact']);
 
 Router::get('/home',[HomeController::class , 'index']);
-
-Router::get('/showProduct',[HomeController::class , 'show']);
+Router::get('/product',[HomeController::class , 'show']);
 $router->resolve();
