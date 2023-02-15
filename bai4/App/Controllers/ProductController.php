@@ -25,10 +25,30 @@ class ProductController extends Controller
         $product['image'] = $image;
         //Upload file
         move_uploaded_file($_FILES['image']['tmp_name'], 'images/' . $image);
-
         //insert
         $p = new ProductModel();
         $p->insert($product);
         header("location:/product");
+    }
+    public function show(Request $request)
+    {
+        $p = $request->getBody();
+        $product = ProductModel::findOne($p['id']);
+        $categories = CategoryModel::all();
+        return $this->view('admin/products/edit', ['product' => $product, 'categories' => $categories]);
+    }
+    public function update(Request $request)
+    {
+        $product = $request->getBody();
+        if ($_FILES['image']['size'] > 0) {
+            $image = $_FILES['image']['name'];
+            $product['image'] = $image;
+            //Upload file
+            move_uploaded_file($_FILES['image']['tmp_name'], 'images/' . $product['image']);
+        }
+        //update
+        ProductModel::findOne($product['id'])->update($product);
+        header("location:/product");
+        exit;
     }
 }

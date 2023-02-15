@@ -6,4 +6,5 @@ class ProductModel extends BaseModel {
   public function show(){
     $products = ProductModel::all();
   }
+  
 }

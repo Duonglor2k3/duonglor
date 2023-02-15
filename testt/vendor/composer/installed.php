@@ -1,6 +1,6 @@
 <?php return array(
     'root' => array(
-        'name' => 'user/bai4',
+        'name' => 'user/testt',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
         'reference' => '2f1ebdabd89fcb212ce373e5c3aea5bed3a5603a',
@@ -10,7 +10,7 @@
         'dev' => true,
     ),
     'versions' => array(
-        'user/bai4' => array(
+        'user/testt' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
             'reference' => '2f1ebdabd89fcb212ce373e5c3aea5bed3a5603a',
