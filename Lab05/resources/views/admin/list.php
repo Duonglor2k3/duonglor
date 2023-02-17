@@ -12,6 +12,10 @@
   <table border="1">
     <th>ID</th>
     <th>Name</th>
+    <th>Price</th>
+    <th>Quantity</th>
+    <th>MaLoai</th>
+    <th>Mota</th>
     <th>Image</th>
     <th>
       <a href="/create-product">Them</a>
@@ -19,9 +23,13 @@
     <?php foreach ($products as $product) : ?>
       <tr>
         <td><?= $product->id ?></td>
-        <td><?= $product->name ?></td>
+        <td><?= $product->tenhh ?></td>
+        <td><?= $product->gia ?></td>
+        <td><?= $product->soluong ?></td>
+        <td><?= $product->maloai ?></td>
+        <td><?= $product->mota ?></td>
         <td>
-          <img src="images/<?= $product->image ?>" alt="" width="120">
+          <img src="images/<?= $product->hinh ?>" alt="" width="120">
         </td>
         <td><a href="/update-product?id=<?= $product->id ?>">Edit</a></td>
         <td><a href="/delete-product?id=<?= $product->id ?>" onclick="return confirm('Ban co muon xoa')">Delete</a></td>

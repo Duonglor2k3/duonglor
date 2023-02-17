@@ -51,4 +51,12 @@ class ProductController extends Controller
         header("location:/product");
         exit;
     }
+    public function delete(Request $request)
+    {
+        $product = $request->getBody();
+        $new = new ProductModel;
+        $new->delete($product['id']);
+        header("location:/product");
+        exit;
+    }
 }

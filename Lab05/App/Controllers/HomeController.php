@@ -6,7 +6,7 @@ use App\Models\ProductModel;
 class HomeController extends Controller{
   public function index(){
     $products = ProductModel::all();
-    $oderBy = ProductModel::top('ngaytao',3);
+    $oderBy = ProductModel::top('gia',3);
     $tops = ProductModel::top('gia',3);
     $this->view('home',['products' => $products,
   'oderBy' => $oderBy,'tops' => $tops]);

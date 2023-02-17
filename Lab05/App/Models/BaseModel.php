@@ -98,10 +98,10 @@ class BaseModel
   }
   public function get()
   {
-  $stmt = $this->conn->prepare($this->sqlBuilder);
-  $stmt->execute();
-  $result = $stmt->fetchAll(PDO::FETCH_CLASS);
-  return $result;
+    $stmt = $this->conn->prepare($this->sqlBuilder);
+    $stmt->execute();
+    $result = $stmt->fetchAll(PDO::FETCH_CLASS);
+    return $result;
   }
   public static function oderBy($tencot,)
   {
